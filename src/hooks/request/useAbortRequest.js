@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 
+/**
+ *
+ * @param {查询参数} query
+ * @param {请求方法} requestData
+ * @returns
+ * hooks作用: 丢弃一些无效的请求结果
+ */
 function useAbortRequest(query, requestData) {
   const [ result, setResult ] = useState('');
 
